@@ -5,6 +5,8 @@
 #SBATCH -n 1
 #SBATCH -c 6
 #SBATCH -t 07:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=nick.haupka@sub.uni-goettingen.de
 
 echo -n 'Start: ' > /scratch/${WORKING_DIRECTORY}/times.txt
 uptime >> /scratch/${WORKING_DIRECTORY}/times.txt
